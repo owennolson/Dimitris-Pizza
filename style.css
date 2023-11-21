@@ -33,6 +33,9 @@ a {
     .navbar-links {
         margin-top: 10px;
     }
+    main {
+        justify-content: center;
+    }
     .pizzaimg {
         height: 100%;
         width: 100%
