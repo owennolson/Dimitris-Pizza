@@ -64,3 +64,9 @@ button {
 .sides-starters {
     grid-row: 1 / .1;
 }
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+  }
