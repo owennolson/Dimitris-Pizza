@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Dimitris Pizza Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: #ffffff;
+            color: #b61b1b;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+
+        .navbar-logo img {
+            width: 20rem; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .navbar-links {
+            display: flex;
+        }
+
+        .navbar-links a {
+          font-family: "Times New Roman", Times, serif;
+          font-weight: bold;
+            margin: 0 3rem; 
+            text-decoration: none;
+            color: #333; 
+        }
+        h1 {
+          color: #b61b1b;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+
+        .menu-dropdown {
+            margin: 0 0 0 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .menu-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .menu-dropdown:hover .menu-dropdown-content {
+            display: block;
+        }
+
+        .grid-container {
+          
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            grid-gap: 20px;
+            justify-content: space-around;
+            align-items: stretch;
+            margin: 20px;
+        }
+
+        .grid-item {
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 5px;
+            align-items: center;
+        }
+
+        h2 {
+            color: #b61b1b;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bolder;
+            
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+          font-family: "Times New Roman", Times, serif;
+
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ffffff;
+            font-weight: bold;
+        }
+        .menu-img {
+          border-style: outset;
+          border-color: #000;
+          border-radius: .5rem;
+          margin-top: 5rem;
+        }
+
+        button {
+            background-color: #b61b1b;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 4rem;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button:hover {
+            background-color: #921717;
+        }
+
+        @media (max-width: 820px) {
+            .grid-container {
+                justify-content: center;
+                align-items: center;
+            }
+
+            .grid-item {
+                width: calc(100% - 20rem);
+                margin-left: 10rem;
+            }
+
+            button {
+                font-size: calc(100% + 1rem);
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <nav>
+    <div class="navbar-links">
+        <a href="menu.html">Menu</a>
+        <a href="tel:+16035294300">Order</a>
+    </div>
+
+    <div class="navbar-logo">
+        <a href="index.html">
+            <img class="logo" src="/Photos/DimiLogo.png" alt="Dimitris Pizza Logo">
+        </a>
+    </div>
+    <div class="navbar-links">
+        <a href="#location">Location</a>
+        <a href="#aboutus">About Us</a>
+    </div>
+</nav>
+
+    <header>
+        <h1>Menu</h1>
+        <div class="menu-dropdown">
+            <img class="menu pizza" src="./photos/Hamburger_icon.png" alt="dropdown image" height="25rem" width="25rem">
+            <div class="menu-dropdown-content">
+                <a class="menu-link" href="#pizza-calzones">Pizza/Calzones</a>
+                <a class="menu-link" href="#subs">Subs</a>
+                <a class="menu-link" href="#sides-starters">Sides and Starters</a>
+                <a class="menu-link" href="#salads">Salads</a>
+                <a class="menu-link" href="#dinner-plates">Dinner Plates</a>
+                <a class="menu-link" href="#kids-menu">Kids Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="grid-container">
+      <div class="grid-item double-height pizza-calzones" id="pizza-calzones">
+        <h2>Pizza/Calzones</h2>
+        <table>
+          <tr>
+            <th>Pizza</th>
+            <th>Large</th>
+            <th>Small</th>
+          </tr>
+          <tr>
+              <td>Cheese</td>
+              <td>12.50</td>
+              <td>8.50</td>
+            </tr>
+            <tr>
+              <td>Pepperoni</td>
+              <td>14.50</td>
+              <td>9.75</td>
+            </tr>
+            <tr>
+              <td>Dimitris Special</td>
+              <td>19.75</td>
+              <td>14.75</td>
+            </tr>
+            <tr>
+              <td>Greek</td>
+              <td>18.25</td>
+              <td>13.50</td>
+            </tr>
+  
+            <tr>
+              <td>Big Mac</td>
+              <td>19.75</td>
+              <td>14.75</td>
+            </tr>
+            <tr>
+              <td>Meat Lovers</td>
+              <td>19.75</td>
+              <td>14.75</td>
+            </tr>
+            <tr>
+              <td>Veggie Deluxe</td>
+              <td>19.75</td>
+              <td>14.75</td>
+            </tr>
+            <tr>
+              <td>Steak Bomb</td>
+              <td>21.25</td>
+              <td>15.75</td>
+            </tr>
+            <tr>
+              <td>Hawaiian</td>
+              <td>19.75</td>
+              <td>14.75</td>
+            </tr>
+            <tr>
+              <td>Mexiacan</td>
+              <td>19.75</td>
+              <td>14.75</td>
+            </tr>
+            <tr>
+              <td>Chicken & Broccoli Alfredo</td>
+              <td>17.00</td>
+              <td>12.25</td>
+            </tr>
+            <td>One Topping</td>
+            <td>14.50</td>
+            <td>9.75</td>
+            </tr>
+            <tr>
+              <td>Combination of Two Toppings</td>
+              <td>15.75</td>
+              <td>11.00</td>
+            </tr>
+            <tr>
+              <td>Combination of Three Toppings</td>
+              <td>17.00</td>
+              <td>12.25</td>
+            </tr>
+            <tr>
+              <td>Combination of Four Toppings</td>
+              <td>18.25</td>
+              <td>13.50</td>
+            </tr>
+
+            <tr>
+              <td>Gluten Free</td>
+              <td></td>
+              <td>+2.00</td>
+            </tr>
+  
+        </table>
+        <table>
+          <tr>
+            <th>Toppings</th>
+          </tr>
+          <tr>
+            <td>Steak</td>
+            <td>Grilled Chicken</td>
+            <td>Sausage</td>
+          </tr>
+          <tr>
+            <td>Bacon</td>
+            <td>Hamburger</td>
+            <td>Salami</td>
+          </tr>
+          <tr>
+            <td>Meatball</td>
+            <td>Anchovies</td>
+            <td>Chicken</td>
+          </tr>
+          <tr>
+            <td>Spinach</td>
+            <td>Pepper</td>
+            <td>Broccoli</td>
+          </tr>
+          <tr>
+            <td>Eggplant</td>
+            <td>Onion</td>
+            <td>Olives</td>
+          </tr>
+          <tr>
+            <td>Tomato</td>
+            <td>Mushroom</td>
+            <td>Jalapeno</td>
+          </tr>
+          <tr>
+            <td>Garlic</td>
+            <td>Pineapple</td>
+            <td>Feta</td>
+          </tr>
+          <tr>
+            <td>Extra Cheese</td>
+            <td>Extra Alfredo</td>
+        </table>
+    </div>
+      <div class="grid-item sides-starters" id="sides-starters">
+        <h2>Sides and Starters</h2>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Wing Ding</td>
+            <td>10.50</td>
+          </tr>
+          <tr>
+            <td>Chicken Fingers</td>
+            <td>10.50</td>
+          </tr>
+          <tr>
+            <td>Buffalo Fingers</td>
+            <td>11.00</td>
+          </tr>
+          <tr>
+            <td>Buffalo Wings</td>
+            <td>11.00</td>
+          </tr>
+          <tr>
+            <td>Onion Rings</td>
+            <td>5.95</td>
+          </tr>
+          <tr>
+            <td>French Fries</td>
+            <td>5.25 Lg</td>
+            <td>4.25 Sm</td>
+          </tr>
+          <tr>
+            <td>Mozzarella Stix</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td>Jalapeno Poppers</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td>Mac & Cheese Bites</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td>Cheese Fries</td>
+            <td>8.00</td>
+          </tr>
+          <tr>
+            <td>Bacon Cheese Fries</td>
+            <td>10.50</td>
+          </tr>
+          <tr>
+            <td>Garlic Bread</td>
+            <td>4.00</td>
+            <td>with Cheese 6.00</td>
+          </tr>
+        </table>
+          <img class="menu-img" src = "Photos/Pizza.JPG" alt = "Menu page image of a yummy dimitris pizza" height="400rem" width="550rem">
+      </div>
+
+      <div class="grid-item subs" id="subs">
+        <h2>Cold Subs</h2>
+        <table>
+          <tr>
+            <th>Sub</th>
+            <th>Large</th>
+            <th>Small</th>
+          </tr>
+          <tr>
+            <td>Roast Beef</td>
+            <td>10.50</td>
+            <td>9.00</td>
+          </tr>
+          <tr>
+            <td>Turkey</td>
+            <td>10.50</td>
+            <td>9.00</td>
+          </tr>
+          <tr>
+            <td>Ham</td>
+            <td>9.00</td>
+            <td>8.00</td>
+          </tr>
+          <tr>
+            <td>Genoa Salami</td>
+            <td>9.00</td>
+            <td>8.00</td>
+          </tr>
+          <tr>
+            <td>Italian</td>
+            <td>9.00</td>
+            <td>8.00</td>
+          </tr>
+          <tr>
+            <td>Crab Meat</td>
+            <td>9.00</td>
+            <td>8.00</td>
+          </tr>
+          <tr>
+            <td>Chicken Salad</td>
+            <td>9.00</td>
+            <td>8.00</td>
+          </tr>
+          <tr>
+            <td>Vegetarian</td>
+            <td>8.50</td>
+            <td>7.50</td>
+          </tr>
+        </table>
+
+        <h2>Hot Subs</h2>
+        <table>
+
+          <tr>
+            <th>Sub</th>
+            <th>Large</th>
+            <th>Small</th>
+          </tr>
+          <tr>
+            <td>Steak Cheese</td>
+            <td>12.00</td>
+          </tr>
+          <tr>
+            <td>Steak Deluxe</td>
+            <td>12.75</td>
+          </tr>
+          <tr>
+            <td>Steak Bomb</td>
+            <td>13.75</td>
+          </tr>
+          <tr>
+            <td>Chicken Finger</td>
+            <td>10.00</td>
+            <td>9.00</td>
+          </tr>
+          <tr>
+            <td>Buffalo Chicken</td>
+            <td>10.50</td>
+            <td>9.50</td>
+          </tr>
+          <tr>
+            <td>Grilled Chicken</td>
+            <td>10.50</td>
+            <td>9.50</td>
+          </tr>
+          <tr>
+            <td>Grilled Chicken Deluxe</td>
+            <td>12.50</td>
+            <td>10.50</td>
+          </tr>
+          <tr>
+            <td>Greek Grilled Chicken</td>
+            <td>12.50</td>
+            <td>10.50</td>
+          </tr>
+          <tr>
+            <td>Grilled Vegetarian</td>
+            <td>10.00</td>
+            <td>9.00</td>
+          </tr>
+          <tr>
+            <td>BLT</td>
+            <td>10.50</td>
+            <td>9.00</td>
+          </tr>
+          <tr>
+            <td>Sausage</td>
+            <td>10.00</td>
+            <td>9.00</td>
+          </tr>
+          <tr>
+            <td>Sausage Stir Fry</td>
+            <td>10.50</td>
+            <td>9.50</td>
+          </tr>
+          <tr>
+            <td>Cheeseburger</td>
+            <td>10.50</td>
+            <td>9.00</td>
+          </tr>
+          <tr>
+            <td>Pastrami</td>
+            <td>10.50</td>
+            <td>9.00</td>
+          </tr>
+          <tr>
+            <td>Meatball</td>
+            <td>9.00</td>
+            <td>8.00</td>
+          </tr>
+          <tr>
+            <td>Chicken Cutlet</td>
+            <td>9.00</td>
+            <td>8.00</td>
+          </tr>
+          <tr>
+            <td>Chicken Parm</td>
+            <td>9.00</td>
+            <td>8.00</td>
+          </tr>
+          <tr>
+            <td>Veal</td>
+            <td>9.00</td>
+            <td>8.00</td>
+          </tr>
+          <tr>
+            <td>Eggplant</td>
+            <td>9.00</td>
+            <td>8.00</td>
+          </tr>
+          <tr>
+            <td>Extra Cheese</td>
+            <td>0.75</td>
+          </tr>
+          <tr>
+            <td>Extra Bacon</td>
+            <td>2.00</td>
+          </tr>
+          <tr>
+            <td>Extra Meat</td>
+            <td>2.00</td>
+          </tr>
+        </table>
+      </div>
+      <div class="grid-item salads" id="salads">
+        <h2>Salads</h2>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Garden</td>
+            <td>8.25</td>
+          </tr>
+          <tr>
+            <td>Caesar</td>
+            <td>9.25</td>
+          </tr>
+          <tr>
+            <td>Greek</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td>Chef's</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td>Antipasto</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td>Crabmeat</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td>Tuna</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td>Buffalo Chicken</td>
+            <td>10.50</td>
+          </tr>
+          <tr>
+            <td>Chicken Salad</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td>Chicken Finger</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td>Grilled Chicken</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td>Greek Grilled Chicken</td>
+            <td>12.00</td>
+          </tr>
+          <tr>
+            <td>Grilled Chicken Ceasar</td>
+            <td>12.00</td>
+          </tr>
+          <tr>
+          </table>
+
+      </div>
+      <div class="grid-item dinner-plates" id="dinner-plates">
+        <h2>Dinner Plates</h2>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Spaghetti with Sauce</td>
+            <td>10.25</td>
+          </tr>
+          <tr>
+            <td>Spaghetti with Meatballs</td>
+            <td>12.00</td>
+          </tr>
+          <tr>
+            <td>Spaghetti with Sausage</td>
+            <td>12.00</td>
+          </tr>
+          <tr>
+            <td>Lasagna</td>
+            <td>13.00</td>
+          </tr>
+          <tr>
+            <td>Manicotti</td>
+            <td>13.00</td>
+          </tr>
+          <tr>
+            <td>Stuffed Shells</td>
+            <td>13.00</td>
+          </tr>
+          <tr>
+            <td>Veal Parmesan</td>
+            <td>13.00</td>
+          </tr>
+          <tr>
+            <td>Chicken Parmesan</td>
+            <td>13.00</td>
+          </tr>
+          <tr>
+            <td>Eggplant Parmesan</td>
+            <td>13.00</td>
+          </tr>
+          <tr>
+            <td>Chicken Broccoli Alfredo</td>
+            <td>13.00</td>
+          </tr>
+          <tr>
+            <td>Mac & Cheese</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td>Buffalo Mac & Cheese</td>
+            <td>13.00</td>
+          </tr>
+          <tr>
+            <td>Wing Ding</td>
+            <td>13.00</td>
+          </tr>
+          <tr>
+            <td>Buffalo Wing</td>
+            <td>13.00</td>
+          </tr>
+          <tr>
+            <td>Chicken Finger</td>
+            <td>13.00</td>
+          </tr>
+          <tr>
+            <td>Buffalo Chicken Finger</td>
+            <td>13.00</td>
+          </tr>
+          <tr>
+            <td>Fish Sandwich Plate</td>
+            <td>9.00</td>
+          </tr>
+          <tr>
+            <td>Cheeseburger Plate</td>
+            <td>9.00</td>
+          </tr>
+        </table>
+      </div>
+      <div class="grid-item kids-menu" id="kids-menu">
+        <h2>Kids Menu</h2>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Cheeseburger Plate</td>
+            <td>7.00</td>
+          </tr>
+          <tr>
+            <td>Chicken Finger</td>
+            <td>9.00</td>
+          </tr>
+          <tr>
+            <td>Mac & Cheese</td>
+            <td>8.00</td>
+          </tr>
+          <tr>
+            <td>Spaghetti with Meatballs</td>
+            <td>9.00</td>
+          </tr>
+          <tr>
+            <td>Spaghetti with Sauce</td>
+            <td>8.00</td>
+          </tr>
+        </table>
+           <img class="menu-img" src = "Photos/Salad.JPG" alt = "Menu page image of a yummy salad" height="auto" width="100%">
+      </div>
+      <div class="grid-item">
+        <a href="tel:+16035294300" class="button2">Order Now</a>
+      </div>
+    </div>
+  </body>
+  
+  </html>
