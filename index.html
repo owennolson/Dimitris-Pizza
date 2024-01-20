@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,24 +24,27 @@
             justify-content: center;
             align-items: center;
             background-color: #ffffff;
-            padding: 10px;
+            padding: 1rem;
+            flex-wrap: wrap;
         }
 
         .navbar-logo img {
-            width: 20rem; /* Adjust the width as needed */
-            height: auto; /* Maintain aspect ratio */
+            max-width: 20rem;
+            margin:0 0 0 3rem;
+            height: auto;
         }
 
         .navbar-links {
             display: flex;
+            margin-top: 10px;
         }
 
         .navbar-links a {
             font-family: "Times New Roman", Times, serif;
-          font-weight: bold;
-            margin: 0 3rem; /* Adjust the margin as needed for space between links */
+            font-weight: bold;
+            margin:0 0 0 3rem;
             text-decoration: none;
-            color: #333; /* Adjust link color */
+            color: #333;
         }
 
         main {
@@ -52,8 +56,62 @@
             text-align: center;
             padding: 20px;
         }
+
+        button {
+            box-sizing: border-box;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 5px;
+            align-items: center;
+            transition: background-color 0.3s ease;
+            font-size: 1.5rem;
+        }
+
+        button:hover {
+            background-color: #130000;
+        }
+
+        button a {
+            text-decoration: none;
+            color: #830c0c;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+        }
+
+        .front-image img {
+            max-width: 100%; 
+            width: 40%;
+            height: auto;
+            margin: 10px 0;
+        }
+        @media only screen and (max-width: 800px) {
+        .nav {
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar-links {
+            flex-direction: row; 
+            align-items: center; 
+    
+        }
+        .navbar-links {
+            order: 2; /* Set the order to 1 to make sure the logo appears first */
+        }
+        .navbar-links a {
+            margin: 1rem 1rem 1rem; /* Remove horizontal margin for links in the column layout */
+        }
+        .front-image img {
+            max-width: 100%; 
+            width: 80%;
+            height: auto;
+            margin: 10px 0;
+        }
+    }
     </style>
 </head>
+
 <body>
     <nav>
         <div class="navbar-links">
@@ -73,17 +131,28 @@
     </nav>
 
     <main>
-        <!-- Main page content goes here -->
-        <h2>Welcome to Your Website!</h2>
-        <p>This is the main content of your website.</p>
+        <div>
+            <img src="/Photos/DimSpecials.png" alt="Main page pizza and specials" style="max-width: 100%;">
+        </div>
     </main>
-
     <section>
-        <!-- Directions content goes here -->
-        <h3>Directions</h3>
-        <p>Provide directions or additional information here.</p>
+        <button><a href="menu.html">View Full Menu</a></button>
+    </section>
+
+    <section class="location">
+        <button><a href="https://www.google.com/maps/place/Dimitris+Pizza+-+Weare/@43.0732077,-71.7220053,15z/data=!4m6!3m5!1s0x89e23ac000000001:0xc71c7a944356e15e!8m2!3d43.0732077!4d-71.7220053!16s%2Fg%2F1tl9nkwm?entry=ttu"
+                target="_blank" rel="noopener noreferrer">Get Directions</a></button>
+
+    </section>
+    <section class="front-image">
+        <img src="/Photos/DimitrisFront.jpg" alt="Image of the front of dimitris pizza">
+        <p>We are located at 1111 S Stark Hwy, Weare, NH</p>
+    </section>
+    <section>
+        <h2>About Us</h2>
+        <p>We are a family-run restaurant in the heart of Weare, NH.</p>
     </section>
 
 </body>
-</html>
 
+</html>
