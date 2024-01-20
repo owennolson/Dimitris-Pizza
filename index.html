@@ -86,6 +86,41 @@
             height: auto;
             margin: 10px 0;
         }
+        h2 {
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        p {
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+        }
+        footer {
+
+            color: #000000; /* Choose a text color for the footer */
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .social-links a img {
+            width: 30px; /* Adjust the width as needed */
+            height: auto;
+        }
+
+        p {
+            margin: 1rem;
+        }
         @media only screen and (max-width: 800px) {
         .nav {
             display: flex;
@@ -150,8 +185,24 @@
     </section>
     <section>
         <h2>About Us</h2>
-        <p>We are a family-run restaurant in the heart of Weare, NH.</p>
+        <p>Welcome to Dimitri's Pizza, a cherished family-run restaurant<br>nestled in the heart of Weare, NH. At Dimitri's, we take pride in <br> serving the community with the finest pizza crafted from <br>time-honored family recipes.</p>
     </section>
+    <footer>
+        <div class="footer-container">
+            <div class="social-links">
+                <!-- LinkedIn link -->
+                <a href="https://www.linkedin.com/in/owen-olson-48b7b5208/" target="_blank" rel="noopener noreferrer">
+                    <img src="Photos/LInkinIcon.png" alt="LinkedIn Profile">
+                </a>
+
+                <!-- GitHub link -->
+                <a href="https://github.com/owennolson" target="_blank" rel="noopener noreferrer">
+                    <img src="Photos/GithubIcon.png" alt="GitHub Profile">
+                </a>
+            </div>
+            <p>Made BY Owen Olson</p>
+        </div>
+    </footer>
 
 </body>
 
