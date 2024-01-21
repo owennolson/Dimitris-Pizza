@@ -30,7 +30,7 @@
 
         .navbar-logo img {
             max-width: 20rem;
-            margin:0 0 0 3rem;
+            margin: 0 0 0 3rem;
             height: auto;
         }
 
@@ -42,7 +42,7 @@
         .navbar-links a {
             font-family: "Times New Roman", Times, serif;
             font-weight: bold;
-            margin:0 0 0 3rem;
+            margin: 0 0 0 3rem;
             text-decoration: none;
             color: #333;
         }
@@ -81,23 +81,26 @@
         }
 
         .front-image img {
-            max-width: 100%; 
+            max-width: 100%;
             width: 40%;
             height: auto;
             margin: 10px 0;
         }
+
         h2 {
             font-family: "Times New Roman", Times, serif;
             font-weight: bold;
             font-size: 2rem;
         }
+
         p {
             font-family: "Times New Roman", Times, serif;
             font-weight: bold;
         }
+
         footer {
 
-            color: #000000; /* Choose a text color for the footer */
+            color: #000000;
             text-align: center;
         }
 
@@ -114,36 +117,41 @@
         }
 
         .social-links a img {
-            width: 30px; /* Adjust the width as needed */
+            width: 30px;
             height: auto;
         }
 
         p {
             margin: 1rem;
         }
+
         @media only screen and (max-width: 800px) {
-        .nav {
-            display: flex;
-            flex-direction: column;
+            .nav {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .navbar-links {
+                flex-direction: row;
+                align-items: center;
+
+            }
+
+            .navbar-links {
+                order: 2;
+            }
+
+            .navbar-links a {
+                margin: 1rem 1rem 1rem;
+            }
+
+            .front-image img {
+                max-width: 100%;
+                width: 80%;
+                height: auto;
+                margin: 10px 0;
+            }
         }
-        .navbar-links {
-            flex-direction: row; 
-            align-items: center; 
-    
-        }
-        .navbar-links {
-            order: 2; /* Set the order to 1 to make sure the logo appears first */
-        }
-        .navbar-links a {
-            margin: 1rem 1rem 1rem; /* Remove horizontal margin for links in the column layout */
-        }
-        .front-image img {
-            max-width: 100%; 
-            width: 80%;
-            height: auto;
-            margin: 10px 0;
-        }
-    }
     </style>
 </head>
 
@@ -156,7 +164,7 @@
 
         <div class="navbar-logo">
             <a href="#index.html">
-                <img class="logo" src="/Photos/DimiLogo.png" alt="Dimitris Pizza Logo">
+                <img class="logo" src="Photos/DimiLogo.png" alt="Dimitris Pizza Logo">
             </a>
         </div>
         <div class="navbar-links">
@@ -167,7 +175,7 @@
 
     <main>
         <div>
-            <img src="/Photos/DimSpecials.png" alt="Main page pizza and specials" style="max-width: 100%;">
+            <img src="Photos/DimSpecials.png" alt="Main page pizza and specials" style="max-width: 100%;">
         </div>
     </main>
     <section>
@@ -175,32 +183,32 @@
     </section>
 
     <section class="location">
-        <button><a href="https://www.google.com/maps/place/Dimitris+Pizza+-+Weare/@43.0732077,-71.7220053,15z/data=!4m6!3m5!1s0x89e23ac000000001:0xc71c7a944356e15e!8m2!3d43.0732077!4d-71.7220053!16s%2Fg%2F1tl9nkwm?entry=ttu"
+        <button><a
+                href="https://www.google.com/maps/place/Dimitris+Pizza+-+Weare/@43.0732077,-71.7220053,15z/data=!4m6!3m5!1s0x89e23ac000000001:0xc71c7a944356e15e!8m2!3d43.0732077!4d-71.7220053!16s%2Fg%2F1tl9nkwm?entry=ttu"
                 target="_blank" rel="noopener noreferrer">Get Directions</a></button>
 
     </section>
     <section class="front-image">
-        <img src="/Photos/DimitrisFront.jpg" alt="Image of the front of dimitris pizza">
+        <img src="Photos/DimitrisFront.jpg" alt="Image of the front of dimitris pizza">
         <p>We are located at 1111 S Stark Hwy, Weare, NH</p>
     </section>
     <section>
         <h2>About Us</h2>
-        <p>Welcome to Dimitri's Pizza, a cherished family-run restaurant<br>nestled in the heart of Weare, NH. At Dimitri's, we take pride in <br> serving the community with the finest pizza crafted from <br>time-honored family recipes.</p>
+        <p>Welcome to Dimitri's Pizza, a cherished family-run restaurant<br>nestled in the heart of Weare, NH. At
+            Dimitri's, we take pride in <br> serving the community with the finest pizza crafted from <br>time-honored
+            family recipes.</p>
     </section>
     <footer>
         <div class="footer-container">
             <div class="social-links">
-                <!-- LinkedIn link -->
                 <a href="https://www.linkedin.com/in/owen-olson-48b7b5208/" target="_blank" rel="noopener noreferrer">
                     <img src="Photos/LInkinIcon.png" alt="LinkedIn Profile">
                 </a>
-
-                <!-- GitHub link -->
                 <a href="https://github.com/owennolson" target="_blank" rel="noopener noreferrer">
                     <img src="Photos/GithubIcon.png" alt="GitHub Profile">
                 </a>
             </div>
-            <p>Made BY Owen Olson</p>
+            <p>Made By Owen Olson</p>
         </div>
     </footer>
 
