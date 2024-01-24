@@ -80,9 +80,10 @@
             font-weight: bold;
         }
 
-        .front-image img {
+        .front-image img,
+        .specialimg img {
             max-width: 100%;
-            width: 40%;
+            width: 50%;
             height: auto;
             margin: 10px 0;
         }
@@ -99,7 +100,6 @@
         }
 
         footer {
-
             color: #000000;
             text-align: center;
         }
@@ -117,12 +117,13 @@
         }
 
         .social-links a img {
-            width: 30px;
+            width: 20px;
             height: auto;
         }
 
-        p {
+        footer p {
             margin: 1rem;
+            font-size: .75rem;
         }
 
         @media only screen and (max-width: 800px) {
@@ -134,7 +135,6 @@
             .navbar-links {
                 flex-direction: row;
                 align-items: center;
-
             }
 
             .navbar-links {
@@ -145,7 +145,8 @@
                 margin: 1rem 1rem 1rem;
             }
 
-            .front-image img {
+            .front-image img,
+            .specialimg img {
                 max-width: 100%;
                 width: 80%;
                 height: auto;
@@ -163,7 +164,7 @@
         </div>
 
         <div class="navbar-logo">
-            <a href="#index.html">
+            <a href="index.html">
                 <img class="logo" src="Photos/DimiLogo.png" alt="Dimitris Pizza Logo">
             </a>
         </div>
@@ -174,8 +175,8 @@
     </nav>
 
     <main>
-        <div>
-            <img src="Photos/DimSpecials.png" alt="Main page pizza and specials" style="max-width: 100%;">
+        <div class="specialimg">
+            <img src="Photos/DimitrisSpecials.png" alt="Main page pizza and specials">
         </div>
     </main>
     <section>
@@ -186,11 +187,10 @@
         <button><a
                 href="https://www.google.com/maps/place/Dimitris+Pizza+-+Weare/@43.0732077,-71.7220053,15z/data=!4m6!3m5!1s0x89e23ac000000001:0xc71c7a944356e15e!8m2!3d43.0732077!4d-71.7220053!16s%2Fg%2F1tl9nkwm?entry=ttu"
                 target="_blank" rel="noopener noreferrer">Get Directions</a></button>
-
     </section>
     <section class="front-image">
-        <img src="Photos/DimitrisFront.jpg" alt="Image of the front of dimitris pizza">
-        <p>We are located at 1111 S Stark Hwy, Weare, NH</p>
+        <img src="Photos/DimitrisFront.png" alt="Image of the front of dimitris pizza">
+        <p>We are located at 1111 S Stark Hwy, Weare, NH.</p>
     </section>
     <section>
         <h2>About Us</h2>
@@ -211,7 +211,6 @@
             <p>Made By Owen Olson</p>
         </div>
     </footer>
-
 </body>
 
 </html>
