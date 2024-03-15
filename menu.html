@@ -217,12 +217,20 @@
       margin: 1rem;
       font-family: "Times New Roman", Times, serif;
       font-weight: bold;
+      text-align: center;
 
     }
     .ingredients {
       font-family: "Times New Roman", Times, serif;
       font-weight: bold;
       font-size: .75rem;
+    }
+    .menuheader {
+      font-size: 1.5rem;
+      color: #b61b1b;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
     @media (max-width: 820px) {
       .grid-container {
@@ -332,42 +340,66 @@
           <td>Greek</td>
           <td>18.25</td>
           <td>13.50</td>
+          <tr class="ingredients">
+            <td>Spinach, Fetta, Brocolli, Tomatoes </td>
+          </tr>
         </tr>
 
         <tr>
           <td>Big Mac</td>
           <td>19.75</td>
           <td>14.75</td>
+          <tr class="ingredients">
+            <td>Thousand Island base with Onions, Pickles, Tomatoes, Lettuce, Hamburger</td>
+          </tr>
         </tr>
         <tr>
           <td>Meat Lovers</td>
           <td>19.75</td>
           <td>14.75</td>
+          <tr class="ingredients">
+            <td>Pepperoni, Ham, Bacon, Hamburger, Sausage </td>
+          </tr>
         </tr>
         <tr>
           <td>Veggie Deluxe</td>
           <td>19.75</td>
           <td>14.75</td>
+          <tr class="ingredients">
+            <td>Mushroom, Onion, Garlic, Tomatoes and Eggplant </td>
+          </tr>
         </tr>
         <tr>
           <td>Steak Bomb</td>
           <td>21.25</td>
           <td>15.75</td>
+          <tr class="ingredients">
+            <td>Shaved Steak, Pepper, Onion, Salami, Tomatoes</td>
+          </tr>
         </tr>
         <tr>
           <td>Hawaiian</td>
           <td>19.75</td>
           <td>14.75</td>
+          <tr class="ingredients">
+            <td>Ham and Pineapple</td>
+          </tr>
         </tr>
         <tr>
           <td>Mexican</td>
           <td>19.75</td>
           <td>14.75</td>
+          <tr class="ingredients">
+            <td>Peppers, Onions, Olives, Jalapeno, Hamburger</td>
+          </tr>
         </tr>
         <tr>
           <td>Chicken & Broccoli Alfredo</td>
           <td>17.00</td>
           <td>12.25</td>
+          <tr class="ingredients">
+            <td>Alfredo Base, Grilled Chicken, Brocolli</td>
+          </tr>
         </tr>
         <td>One Topping</td>
         <td>14.50</td>
@@ -469,6 +501,10 @@
           <td>4.00</td>
         </tr>
         <tr>
+          <td>Garlic Bread with Cheese</td>
+          <td>6.00</td>
+        </tr>
+        <tr>
           <td>Wing Ding</td>
           <td>10.50</td>
         </tr>
@@ -544,9 +580,11 @@
           <td>Italian</td>
           <td>9.00</td>
           <td>8.00</td>
-          <tr class="ingredients">
-            <td>Ham, Salami and Pepperoni with Lettuce, <br>Pickles, Olives and a Drizzle of oil</td>
-          </tr>
+        </tr>
+        <tr>
+          <td>Tuna Sub</td>
+          <td>9.00</td>
+          <td>8.00</td>
         </tr>
         <tr>
           <td>Crab Meat</td>
@@ -581,14 +619,14 @@
           <td>Steak Deluxe</td>
           <td>12.75</td>
           <tr class="ingredients">
-            <td>Shaved Steak with Mushroom,<br> Onion and Pepper</td>
+            <td>Mushroom, Onion and Pepper</td>
           </tr>
         </tr>
         <tr>
           <td>Steak Bomb</td>
           <td>13.75</td>
           <tr class="ingredients">
-            <td>Shaved Steak with Tomato, Pepper, <br> Onion and Salami</td>
+            <td>Tomato, Pepper, Onion and Salami</td>
           </tr>
         </tr>
         <tr>
@@ -607,11 +645,11 @@
           <td>9.50</td>
         </tr>
         <tr>
-          <td>Grilled Chicken Deluxe</td>
+          <td>Grilled Chicken Stirfry</td>
           <td>12.50</td>
           <td>10.50</td>
           <tr class="ingredients">
-            <td>Grilled Chicken with Mushroom,<br> Onion and Pepper</td>
+            <td>Mushroom, Onion and Pepper</td>
           </tr>
         </tr>
         <tr>
@@ -619,7 +657,7 @@
           <td>12.50</td>
           <td>10.50</td>
           <tr class="ingredients">
-            <td>Grilled chicken with Lettuce, Onion,<br> Tomato, Feta and Greek Dressing</td>
+            <td>Lettuce, Onion,  Tomato, <br> Feta and House Dressing</td>
           </tr>
         </tr>
         <tr>
@@ -627,7 +665,7 @@
           <td>12.50</td>
           <td>10.50</td>
           <tr class="ingredients">
-            <td>Grilled chicken with Lettuce, <br>Parmesean Cheese and Caesar Dressing</td>
+            <td>Lettuce, Parmesean Cheese, Croutons and Caesar Dressing</td>
           </tr>
         </tr>
         
@@ -743,9 +781,6 @@
         <tr>
           <td>Grilled Chicken</td>
           <td>10.00</td>
-          <tr class="ingredients">
-            <td>Our Garden Salad topped with Grilled <br>Chicken and your choice of dressing
-          </tr>
         </tr>
         <tr>
           <td>Greek Grilled Chicken</td>
@@ -763,10 +798,13 @@
     <div class="grid-item dinner-plates" id="dinner-plates">
       <h2>Dinners and Plates</h2>
       <table>
-        <p>All dinners come with side salad</p>
-        <p>All pastas come with side salad and garlic bread</p>
-        <p>All Plates served with fries</p>
         <p>Substitutions and Additions may Change Price</p>
+        <tr>
+          <th class="menuheader">Pasta</th>
+        </tr>
+        <tr>
+          <th><p>All pastas come with side salad and garlic bread</p></th>
+        </tr>
         <tr>
           <th>Item</th>
           <th>Price</th>
@@ -821,6 +859,12 @@
           <td>13.00</td>
         </tr>
         <tr>
+          <th class="menuheader">Dinners</th>
+        </tr>
+        <tr>
+          <th><p>All dinners come with side salad</p></th>
+        </tr>
+        <tr>
           <td>Wing Ding</td>
           <td>13.00</td>
         </tr>
@@ -835,6 +879,12 @@
         <tr>
           <td>Buffalo Chicken Finger</td>
           <td>13.00</td>
+        </tr>
+        <tr>
+          <th class="menuheader">Plates</th>
+        </tr>
+        <tr>
+          <th><p>All Plates served with fries</p></th>
         </tr>
         <tr>
           <td>Fish Sandwich Plate</td>
