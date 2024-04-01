@@ -100,32 +100,25 @@
             font-weight: bold;
         }
 
-        footer {
-            color: #000000;
-            text-align: center;
-        }
-
         .footer-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #b61b1b;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 0.8rem; /* Adjust font size as needed */
+    }
 
-        .social-links {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
+    .footer-info {
+      flex: 1; /* Take up remaining space */
+    }
 
-        .social-links a img {
-            width: 20px;
-            height: auto;
-        }
-
-        footer p {
-            margin: 1rem;
-            font-size: .75rem;
-        }
+    .footer-container img {
+      width: 30px; /* Adjust icon size as needed */
+      justify-content: center;
+      align-items: center;
+    }
 
         @media only screen and (max-width: 800px) {
             .nav {
@@ -204,17 +197,22 @@
     </section>
     <footer>
         <div class="footer-container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/owen-olson-48b7b5208/" target="_blank" rel="noopener noreferrer">
-                    <img src="Photos/LInkinIcon.png" alt="LinkedIn Profile">
-                </a>
-                <a href="https://github.com/owennolson" target="_blank" rel="noopener noreferrer">
-                    <img src="Photos/GithubIcon.png" alt="GitHub Profile">
-                </a>
-            </div>
-            <p>Made By Owen Olson</p>
-        </div>
-    </footer>
+          <!-- New footer content -->
+          <div class="footer-info">
+            <p>Phone: +1 603-529-4300</p>
+            <p>Hours: Sun-Thurs 11:00 AM - 8:00 PM</p>
+            <p>Hours: Fri-Sat 11:00 AM - 9:00 PM</p>
+            <p>Address: 1111 South Stark Highway, Weare, NH, 03281</p>
+            <p>Thank you!</p>
+            <p>Created By Owen Olson</p>
+            <p><a href="https://www.linkedin.com/in/owen-olson-48b7b5208/" target="_blank" rel="noopener noreferrer">
+              <img src="Photos/LInkinIcon.png" alt="LinkedIn Profile">
+            </a><a href="https://github.com/owennolson" target="_blank" rel="noopener noreferrer">
+              <img src="Photos/GithubIcon.png" alt="GitHub Profile">
+            </a></p>
+          </div>
+          
+      </footer>
 </body>
 
 </html>

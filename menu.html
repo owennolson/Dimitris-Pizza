@@ -189,28 +189,25 @@
     .menu-dropdown:hover .menu-dropdown-content {
       display: block;
     }
-
-    footer {
-
-      color: #000000;
-      text-align: center;
-    }
-
+    
     .footer-container {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #b61b1b;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 0.8rem; /* Adjust font size as needed */
+    }
+
+    .footer-info {
+      flex: 1; /* Take up remaining space */
+    }
+
+    .footer-container img {
+      width: 30px; /* Adjust icon size as needed */
       justify-content: center;
       align-items: center;
-    }
-
-    .social-links {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .social-links a img {
-      width: 30px;
-      height: auto;
     }
 
     p {
@@ -331,7 +328,7 @@
           <td>19.75</td>
           <td>14.75</td>
           <tr class="ingredients">
-            <td>Topped with Pepperoni, Mushroom, Onion and Peppers </td>
+            <td>Pepperoni, Mushroom, Onion and Peppers </td>
           </tr>
         </tr>
         <tr>
@@ -478,10 +475,10 @@
         </tr>
         
         <tr>
-          <td>Mozzarella Stix</td>
+          <td>Mozzarella Sticks</td>
           <td>10.00</td>
         </tr>
-        <img class="menu-img" src="Photos/mozzstix.JPG" alt="Menu page image of a yummy dimitris pizza" height="400rem"
+        <img class="menu-img" src="Photos/mozzstix.JPG" alt="menu item Mozzarella sticks" height="400rem"
         width="550rem">
         <tr>
           <td>Jalapeno Poppers</td>
@@ -580,7 +577,7 @@
           <td>8.00</td>
         </tr>
         <tr>
-          <td>Tuna Sub</td>
+          <td>Tuna</td>
           <td>9.00</td>
           <td>8.00</td>
         </tr>
@@ -795,10 +792,8 @@
     </div>
     <div class="grid-item dinner-plates" id="dinner-plates">
       <h2>Pasta</h2>
+      <p>All pastas come with side salad and garlic bread</p>
       <table>
-        <tr>
-          <th><p>All pastas come with side salad and garlic bread</p></th>
-        </tr>
         <tr>
           <th>Item</th>
           <th>Price</th>
@@ -852,12 +847,10 @@
           <td>Buffalo Mac & Cheese</td>
           <td>13.00</td>
         </tr>
-        <tr>
-          <th class="menuheader">Dinners</th>
-        </tr>
-        <tr>
-          <th><p>All dinners come with side salad</p></th>
-        </tr>
+      </table>
+        <h2>Dinners</h2>
+        <p>All dinners come with side salad</p>
+        <table>
         <tr>
           <td>Wing Ding</td>
           <td>13.00</td>
@@ -874,12 +867,10 @@
           <td>Buffalo Chicken Finger</td>
           <td>13.00</td>
         </tr>
-        <tr>
-          <th class="menuheader">Plates</th>
-        </tr>
-        <tr>
-          <th><p>All Plates served with fries</p></th>
-        </tr>
+      </table>
+      <h2>Plates</h2>
+      <p>All Plates served with fries</p>
+      <table>
         <tr>
           <td>Fish Sandwich Plate</td>
           <td>9.00</td>
@@ -931,18 +922,23 @@
 
   </div>
   <footer>
-    <div class="footer-container">
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/owen-olson-48b7b5208/" target="_blank" rel="noopener noreferrer">
-          <img src="Photos/LInkinIcon.png" alt="LinkedIn Profile">
-        </a>
-        <a href="https://github.com/owennolson" target="_blank" rel="noopener noreferrer">
-          <img src="Photos/GithubIcon.png" alt="GitHub Profile">
-        </a>
-      </div>
-      <p>Made By Owen Olson</p>
+  <div class="footer-container">
+    <!-- New footer content -->
+    <div class="footer-info">
+      <p>Phone: +1 603-529-4300</p>
+      <p>Hours: Sun-Thurs 11:00 AM - 8:00 PM</p>
+      <p>Hours: Fri-Sat 11:00 AM - 9:00 PM</p>
+      <p>Address: 1111 South Stark Highway, Weare, NH, 03281</p>
+      <p>Thank you!</p>
+      <p>Created By Owen Olson</p>
+      <p><a href="https://www.linkedin.com/in/owen-olson-48b7b5208/" target="_blank" rel="noopener noreferrer">
+        <img src="Photos/LInkinIcon.png" alt="LinkedIn Profile">
+      </a><a href="https://github.com/owennolson" target="_blank" rel="noopener noreferrer">
+        <img src="Photos/GithubIcon.png" alt="GitHub Profile">
+      </a></p>
     </div>
-  </footer>
+    
+</footer>
 </body>
 
 </html>
