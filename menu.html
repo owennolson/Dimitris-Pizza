@@ -208,6 +208,25 @@
       color: #b61b1b;
       text-align: center;
     }
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Center items vertically */
+        background-color: #b61b1b;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 0.8rem;
+        text-align: center; /* Center text horizontally */
+    }
+
+    .footer-info {
+        flex: 1;
+    }
+
+    .footer-container img {
+        width: 30px;
+    }
     @media (max-width: 820px) {
       .grid-container {
         grid-template-columns: 1fr;
@@ -906,7 +925,7 @@
   <div class="footer-container">
     <!-- New footer content -->
     <div class="footer-info">
-      <p>Phone: +1 603-529-4300</p>
+      <p>Phone: <a href="tel:+16035294300">+16035294300</a></p>
       <p>Hours: Sun-Thurs 11:00 AM - 8:00 PM</p>
       <p>Hours: Fri-Sat 11:00 AM - 9:00 PM</p>
       <p>Address: 1111 South Stark Highway, Weare, NH, 03281</p>
