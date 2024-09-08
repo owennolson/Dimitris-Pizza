@@ -25,4 +25,4 @@
   N/A
 
   ## Questions
-  If you have any questions please contact me through my Email: ono@owenolson.com. You can find more of my work at (https://github.com/users/owennolson)
+  If you have any questions please contact me through my Email: ono@owenolson.com. You can find more of my work at https://github.com/owennolson
